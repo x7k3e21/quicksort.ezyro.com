@@ -1,0 +1,30 @@
+
+.primary
+{
+    background-color: #3434a8;
+}
+
+.secondary
+{
+    background-color: #3c3ce8;
+}
+
+.primary-variant
+{
+    background-color: #4444dB;
+}
+
+.secondary-variant
+{
+    background-color: #2c2ca8;
+}
+
+.on-primary
+{
+    color: #fdfdff;
+}
+
+.on-secondary
+{
+    color: #e6e6e8;
+}

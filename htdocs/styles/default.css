@@ -3,12 +3,14 @@
  * для всех элементов на странице */
 html, body
 {
+    /* Сброс значений параметров PADDING */
     padding-left: 0%;
     padding-right: 0%;
 
     padding-top: 0%;
     padding-bottom: 0%;
 
+     /* Сброс значений параметров MARGIN */
     margin-left: 0%;
     margin-right: 0%;
 
@@ -16,33 +18,40 @@ html, body
     margin-bottom: 0%;
 }
 
+/* Установка параметров для навигационных панелей */
 .navigation-panel
 {
+    /* Установка значений отступов для текста */
     padding-left: 20px;
     padding-right: 20px;
 
     padding-top: 8px;
     padding-bottom: 8px;
 
+    /* Настройка параметров шрифта */
     font-size: 24pt;
     font-weight: 600;
 
     font-family: "Segoe UI";
 }
 
+/* Параметры для элементов, прикрепленных к верхнему краю экрана */
 .sticky
 {
+    /* Обозначение позиции эллемента */
     position: sticky;
 }
 
 .container
 {
+    /* Установка значений отступов для текста */
     padding-left: 20px;
     padding-right: 20px;
 
     padding-top: 8px;
     padding-bottom: 8px;
 
+    /* Настройка параметров шрифта */
     font-size: 18pt;
     font-weight: 600;
 

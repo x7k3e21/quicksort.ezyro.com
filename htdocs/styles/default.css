@@ -16,6 +16,10 @@ html, body
 
     margin-top: 0%;
     margin-bottom: 0%;
+
+    /* Настройка значений шрифта для страницы */
+    font-weight: 600;
+    font-family: "Segoe UI";
 }
 
 /* Установка параметров для навигационных панелей */
@@ -27,12 +31,11 @@ html, body
 
     padding-top: 8px;
     padding-bottom: 8px;
+}
 
-    /* Настройка параметров шрифта */
-    font-size: 24pt;
-    font-weight: 600;
-
-    font-family: "Segoe UI";
+.navigation-link
+{
+    text-decoration: none;
 }
 
 /* Параметры для элементов, прикрепленных к верхнему краю экрана */
@@ -50,10 +53,4 @@ html, body
 
     padding-top: 8px;
     padding-bottom: 8px;
-
-    /* Настройка параметров шрифта */
-    font-size: 18pt;
-    font-weight: 600;
-
-    font-family: "Segoe UI";
 }

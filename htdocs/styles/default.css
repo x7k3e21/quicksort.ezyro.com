@@ -9,12 +9,135 @@
     --background-color: #fefefd;
     
     --background-text: #111111;
+
+    --border-raduis: 20px;
+}
+
+@font-face 
+{
+    font-family: "Nunito-ExtraLight";
+    src: url("../fonts/Nunito/Nunito-ExtraLight.ttf") format("truetype");
+}
+
+@font-face 
+{
+    font-family: "Nunito-Light";
+    src: url("../fonts/Nunito/Nunito-Light.ttf") format("truetype");
+}
+
+@font-face 
+{
+    font-family: "Nunito-Medium";
+    src: url("../fonts/Nunito/Nunito-Medium.ttf") format("truetype");
+}
+
+@font-face 
+{
+    font-family: "Nunito-Regular";
+    src: url("../fonts/Nunito/Nunito-Regular.ttf") format("truetype");
+}
+
+@font-face 
+{
+    font-family: "Nunito-Bold";
+    src: url("../fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face 
+{
+    font-family: "Nunito-ExtraBold";
+    src: url("../fonts/Nunito/Nunito-ExtraBold.ttf") format("truetype");
+}
+
+@font-face 
+{
+    font-family: "Nunito-Black";
+    src: url("../fonts/Nunito/Nunito-Black.ttf") format("truetype");
+}
+
+*
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+    box-sizing: border-box;
 }
 
 body
 {    
-    /* Setting background color for main body */
+    /* Устанавливаем цвет заднего фона для страницы */
     background-color: var(--background-color);
-    /* Also setting foreground color for text on main body */
+    /* Также устанавливаем цвет текста, отобржаемого на странице */
     color: var(--background-text);
+
+    /* После этого устанавливаем шрифты для текста на странице */
+    font-family: "Nunito-Regular", sans-serif;
+}
+
+#page-container
+{
+    display: grid;
+
+    width: 100vw;
+
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 50px 1fr 50px;
+
+    grid-template-areas: 
+        "header header"
+        "navbar container"
+        "footer footer";
+}
+
+#page-container > header.page-header
+{
+    grid-area: header;
+}
+
+#page-container > footer.page-footer
+{
+    grid-area: footer;
+}
+
+#page-container > nav.page-navbar
+{
+    grid-area: navbar;
+}
+
+#page-container > main.page-content
+{
+    grid-area: container;
+}
+
+header.page-header, footer.page-footer
+{
+    background-color: var(--primary-color);
+}
+
+nav.page-navbar
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    background-color: var(--secondary-color);
+}
+
+main.page-content
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    background-color: var(--background-color);
 }

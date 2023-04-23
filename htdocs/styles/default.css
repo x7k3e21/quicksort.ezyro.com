@@ -1,46 +1,20 @@
-
-/* Установка стандартных параметров 
- * для всех элементов на странице */
-html, body
+:root
 {
-    /* Сброс значений параметров PADDING */
-    padding-left: 0%;
-    padding-right: 0%;
+    --primary-color: #3434a8;
+    --secondary-color: #4444db;
 
-    padding-top: 0%;
-    padding-bottom: 0%;
+    --primary-text: #fdfdff;
+    --secondary-text: #f8f8f8;
 
-     /* Сброс значений параметров MARGIN */
-    margin-left: 0%;
-    margin-right: 0%;
-
-    margin-top: 0%;
-    margin-bottom: 0%;
-
-    /* Настройка значений шрифта для страницы */
-    font-weight: 600;
-    font-family: "Segoe UI";
+    --background-color: #fefefd;
+    
+    --background-text: #111111;
 }
 
-
-.navigation-label
-{
-    padding-left: 15px;
-    padding-right: 15px;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    text-decoration: none;
-}
-
-.navigation-link
-{
-    padding-left: 10px;
-    padding-right: 10px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    text-decoration: none;
+body
+{    
+    /* Setting background color for main body */
+    background-color: var(--background-color);
+    /* Also setting foreground color for text on main body */
+    color: var(--background-text);
 }
